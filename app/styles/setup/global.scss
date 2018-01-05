@@ -1,0 +1,31 @@
+
+
+.scrollup {
+  position: fixed;
+  z-index: 99999;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: #f57c05;
+  i {
+    color: #ffffff;
+    text-align: center;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    &:hover {
+      opacity: 1;
+      filter: alpha(opacity=1);
+    }
+  } 
+}
+
+
+
+
+
+
+
+
+
