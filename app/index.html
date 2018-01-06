@@ -49,7 +49,6 @@
         <div class="swiper-slide">Slide 1</div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
       </div>
       <div class="swiper-pagination header-swiper-pagination"></div>
       <div class="swiper-button-next header-swiper-button-next"></div>
@@ -651,14 +650,15 @@
     <i class=""></i>
   </a>
 
-  <script src="scripts/jquery/jquery.min.js"></script>
-  <script src="scripts/twbs/bootstrap.min.js"></script>
-  <script src="scripts/swiper/swiper.min.js"></script>
-  <script src="scripts/comm.js"></script>
-   <!-- Initialize Swiper -->
-   <script>
-
-    var header_swiper = new Swiper('.header-swiper-container', {
+<script src="scripts/jquery/jquery.min.js"></script>
+<script src="scripts/twbs/bootstrap.min.js"></script>
+<script src="scripts/swiper/swiper.min.js"></script>
+<script src="scripts/comm.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  // header
+  function header_swiper() {
+    new Swiper('.header-swiper-container', {
       spaceBetween: 0,
       centeredSlides: true,
       autoplay: {
@@ -674,11 +674,14 @@
         prevEl: '.header-swiper-button-prev',
       },
     });
+  }
 
-    var team_swiper = new Swiper('.team-swiper-container', {
-      slidesPerView: 3,
+  // team
+  function team_swiper(team_slides_perView) {
+    new Swiper('.team-swiper-container', {
+      slidesPerView: team_slides_perView,
       spaceBetween: 30,
-      slidesPerGroup: 3,
+      slidesPerGroup: team_slides_perView,
       loop: true,
       loopFillGroupWithBlank: true,
       pagination: {
@@ -690,8 +693,11 @@
         prevEl: '.team-swiper-button-prev',
       },
     });
+  }
 
-    var testimonial_swiper = new Swiper('.testimonial-swiper-container', {
+
+  function testimonial_swiper() {
+    new Swiper('.testimonial-swiper-container', {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
@@ -704,11 +710,13 @@
         prevEl: '.testimonial-swiper-button-prev',
       },
     });
+  }
 
-    var news_swiper = new Swiper('.news-swiper-container', {
-      slidesPerView: 3,
+  function news_swiper(news_slides_perView) {
+    new Swiper('.news-swiper-container', {
+      slidesPerView: news_slides_perView,
       spaceBetween: 30,
-      slidesPerGroup: 3,
+      slidesPerGroup: news_slides_perView,
       loop: true,
       loopFillGroupWithBlank: true,
       pagination: {
@@ -718,11 +726,13 @@
       navigation: {
         nextEl: '.news-swiper-button-next',
         prevEl: '.news-swiper-button-prev',
-      },
+      }, 
     });
+  }
 
-    var news_swiper = new Swiper('.partner-swiper-container', {
-      slidesPerView: 5,
+  function partner_swiper(partner_slides_perView){
+    new Swiper('.partner-swiper-container', {
+      slidesPerView: partner_slides_perView,
       spaceBetween: 30,
       freeMode: true,
       loop: true,
@@ -736,6 +746,49 @@
         clickable: true,
       },
     });
-  </script>
+  }
+
+  $(function() {
+    header_swiper()
+    testimonial_swiper()
+
+    var window_width = $(window).width()
+    if (window_width < 768) {
+      var team_slides_perView = 2
+      var news_slides_perView = 2
+      var partner_slides_perView = 3
+      team_swiper(team_slides_perView)
+      news_swiper(news_slides_perView)
+      partner_swiper(partner_slides_perView)
+    } else {
+      var team_slides_perView = 3
+      var news_slides_perView = 3
+      var partner_slides_perView = 5
+      team_swiper(team_slides_perView)
+      news_swiper(news_slides_perView)
+      partner_swiper(partner_slides_perView)
+    }
+
+    $(window).resize(function () {
+      var window_width = $(window).width()
+      if (window_width < 768) {
+        var team_slides_perView = 2
+        var news_slides_perView = 2
+        // var partner_slides_perView = 3
+        team_swiper(team_slides_perView)
+        news_swiper(news_slides_perView)
+        // partner_swiper(partner_slides_perView)
+      } else {
+        var team_slides_perView = 3
+        var news_slides_perView = 3
+        // var partner_slides_perView = 5
+        team_swiper(team_slides_perView)
+        news_swiper(news_slides_perView)
+        // partner_swiper(partner_slides_perView)
+      }
+    });
+
+  })  
+</script>
 </body>
 </html>
