@@ -3,7 +3,7 @@
 
 $header_height: 60px;
 $section_padding: 60px;
-
+$swiper_pagination_margin: 40px;
 
 header.header {
   background-color: #fff;
@@ -28,7 +28,7 @@ header.header {
     float: right;
     li a {
       padding: 0;
-      width: $header_height;
+      padding: 0 20px;
       height: $header_height;
       font-size: 16px;
       text-align: center;
@@ -158,6 +158,7 @@ footer.footer-copyright {
   height: 48px;
   background: #EFA95B;
   display: none;
+  cursor: pointer;
   i {
     color: #ffffff;
     text-align: center;
