@@ -1,0 +1,48 @@
+
+// global media
+
+@media only screen and (max-width: 1460px) { 
+  
+}
+
+@media only screen and (max-width: 992px) { 
+  header.header {
+    .logo {
+      img {
+        max-height: 54px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) { 
+  $header_height: 60px;
+  header.header {
+    .navbar {
+      min-height: $header_height;
+    }
+    .navbar-brand {
+      height: $header_height;
+    }
+    .navbar-nav {
+      float: inherit;
+      li a {
+        display: block;
+        width: 100%;
+        height: $header_height;
+        line-height: $header_height;
+      }
+    }
+    .navbar-toggle {
+      margin: 13px 15px;
+      .icon-bar {
+        background-color: #777;
+      }
+    }
+    .logo {
+      img {
+        margin-top: 3px;
+      }
+    }
+  }
+}
