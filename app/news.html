@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles/swiper/swiper.min.css">
 </head>
 
-<body class="home-page">
+<body class="news-page">
   <!-- header -->
   <header class="header">
     <nav class="navbar"><!-- navbar-fixed-top -->
@@ -43,20 +43,59 @@
   </header>
 
   <section class="top-banner">
-    <h1>top banner</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Creating a new theme</h1>
+            </div>
+        </div>
+    </div>
   </section>
 
-  <section class="news-warpper">
+  <section class="news-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-9" id="news-listing-medium">
+        <div class="col-md-9">
+          
+          <div class="post">
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="image" style="height: 196.859px;">
+                    <a href="/new-info.html">
+                      <img src="/images/news/news-01.jpg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <h2>
+                    <a href="/new-info.html">Linked post</a>
+                  </h2>
+                  <div class="clearfix">
+                    <p class="author-category">
+                      By <a href="#">admin</a>
+                      in <a href="">成都.四川</a>
+                    </p>
+                    <p class="date-comments">
+                      <a href=""><i class="fa fa-calendar-o"></i>2018-01-12</a>
+                    </p>
+                  </div>
+                  <p class="intro">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ut laborum enim soluta, earum officiis nostrum facere debitis, laboriosam similique perferendis adipisci praesentium deleniti. Quidem explicabo quibusdam odit nisi tenetur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ut laborum enim soluta, earum officiis nostrum facere debitis, laboriosam similique perferendis adipisci praesentium deleniti. Quidem explicabo quibusdam odit nisi tenetur!
+                  </p>
+                  <p class="read-more">
+                    <a href="/new-info.html">Read More</a>
+                  </p>
+                </div>
+            </div>
+          </div>
           
           <div class="post">
             <div class="row">
                 <div class="col-md-4">
                   <div class="image" style="height: 196.859px;">
                     <a href="">
-                      <img src="" class="img-responsive" alt="">
+                      <img src="/images/news/news-01.jpg" alt="">
                     </a>
                   </div>
                 </div>
@@ -66,81 +105,50 @@
                   </h2>
                   <div class="clearfix">
                     <p class="author-category">
-                      By <a href="#">John Doe</a>
-                      in <a href="">programming</a>
+                      By <a href="#">admin</a>
+                      in <a href="">成都.四川</a>
                     </p>
                     <p class="date-comments">
-                      <a href=""><i class="fa fa-calendar-o"></i> October 2, 2015</a>
+                      <a href=""><i class="fa fa-calendar-o"></i>2018-01-12</a>
                     </p>
                   </div>
                   <p class="intro">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ut laborum enim soluta, earum officiis nostrum facere debitis, laboriosam similique perferendis adipisci praesentium deleniti. Quidem explicabo quibusdam odit nisi tenetur!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ut laborum enim soluta, earum officiis nostrum facere debitis, laboriosam similique perferendis adipisci praesentium deleniti. Quidem explicabo quibusdam odit nisi tenetur!
                   </p>
                   <p class="read-more">
-                    <a href="" class="btn btn-template-main">Continue reading</a>
+                    <a href="">Read More</a>
                   </p>
                 </div>
             </div>
           </div>
 
+          <ul class="pager">
+            <li class="previous disabled"><a href="#">← 上一页</a></li>
+            <li class="next disabled"><a href="#">下一页 →</a></li>
+          </ul>
         </div>
 
         <div class="col-md-3">
-            <div class="panel panel-default sidebar-menu">
-              <div class="panel-heading">
-                <h3 class="panel-title">Search</h3>
-              </div>
-              <div class="panel-body">
-                <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
-                  <div class="input-group">
-                    <input type="search" name="q" class="form-control" placeholder="Search">
-                    <input type="hidden" name="sitesearch" value="">
-                    <span class="input-group-btn">
-                      <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
-                    </span>
-                  </div>
-                </form>
-              </div>
+          <div class="panel">
+            <div class="panel-heading">
+              <h3 class="panel-title">热门动态</h3>
             </div>
-            <div class="panel panel-default sidebar-menu">
-              <div class="panel-heading">
-                <h3 class="panel-title">Categories</h3>
-              </div>
-              <div class="panel-body">
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="">lorem (1)</a>
-                  </li>
-                  <li><a href="">programming (2)</a>
-                  </li>
-                  <li><a href="">pseudo (1)</a>
-                  </li>
-                  <li><a href="">starting (1)</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="panel sidebar-menu">
-              <div class="panel-heading">
-                <h3 class="panel-title">Tags</h3>
-              </div>
-              <div class="panel-body">
-                <ul class="tag-cloud">
-                  <li><a href=""><i class="fa fa-tags"></i> go</a>
-                  </li>
-                  <li><a href=""><i class="fa fa-tags"></i> golang</a>
-                  </li>
-                  <li><a href=""><i class="fa fa-tags"></i> hugo</a>
-                  </li>
-                  <li><a href=""><i class="fa fa-tags"></i> ipsum</a>
-                  </li>
-                  <li><a href=""><i class="fa fa-tags"></i> programming</a>
-                  </li>
-                  <li><a href=""><i class="fa fa-tags"></i> theme</a>
-                  </li>
-                </ul>
-              </div>
+            <div class="panel-body">
+              <ul class="nav">
+                <li><a href="">news-01 title</a>
+                </li>
+                <li><a href="">news-02 title</a>
+                </li>
+                <li><a href="">news-03 title</a>
+                </li>
+                <li><a href="">news-04 title</a>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
+
       </div>
     </div>
 
@@ -222,163 +230,6 @@
 
 <script src="scripts/jquery/jquery.min.js"></script>
 <script src="scripts/twbs/bootstrap.min.js"></script>
-<script src="scripts/swiper/swiper.min.js"></script>
 <script src="scripts/comm.js"></script>
-<!-- Initialize Swiper -->
-<script>
-  // header
-  function header_swiper() {
-    new Swiper('.header-swiper-container', {
-      spaceBetween: 0,
-      centeredSlides: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.header-swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.header-swiper-button-next',
-        prevEl: '.header-swiper-button-prev',
-      },
-    });
-  }
-
-  // team
-  function team_swiper(team_slides_perView) {
-    new Swiper('.team-swiper-container', {
-      slidesPerView: team_slides_perView,
-      spaceBetween: 30,
-      slidesPerGroup: team_slides_perView,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.team-swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.team-swiper-button-next',
-        prevEl: '.team-swiper-button-prev',
-      },
-    });
-  }
-
-
-  function testimonial_swiper() {
-    new Swiper('.testimonial-swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.testimonial-swiper-pagination',
-        clickable: true,
-      },
-    });
-  }
-
-  function news_swiper(news_slides_perView) {
-    new Swiper('.news-swiper-container', {
-      slidesPerView: news_slides_perView,
-      spaceBetween: 30,
-      slidesPerGroup: news_slides_perView,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.news-swiper-pagination',
-        clickable: true,
-      },
-    });
-  }
-
-  function partner_swiper(partner_slides_perView){
-    new Swiper('.partner-swiper-container', {
-      slidesPerView: partner_slides_perView,
-      spaceBetween: 30,
-      freeMode: true,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.partner-swiper-pagination',
-        clickable: true,
-      },
-    });
-  }
-
-  $(function() {
-    header_swiper()
-    testimonial_swiper()
-    partner_swiper(5)
-
-    var window_width = $(window).width()
-    var team_slides_perView, news_slides_perView
-    if (window_width > 768 ) {
-      team_slides_perView = 3
-      team_swiper(team_slides_perView)
-      news_slides_perView = 3
-      news_swiper(news_slides_perView)
-      // partner_slides_perView = 5
-      // partner_swiper(partner_slides_perView)
-    } else if (window_width <= 768 && window_width > 425) {
-      team_slides_perView = 2
-      team_swiper(team_slides_perView)
-      news_slides_perView = 2
-      news_swiper(news_slides_perView)
-      // partner_slides_perView = 4
-      // partner_swiper(partner_slides_perView)
-    } else if (window_width < 425) {
-      team_slides_perView = 1
-      team_swiper(team_slides_perView)
-      news_slides_perView = 1
-      news_swiper(news_slides_perView)
-      // partner_slides_perView = 3
-      // partner_swiper(partner_slides_perView)
-    }
-
-    $(window).resize(function () {
-      var window_width = $(window).width()
-      if (window_width > 768 ) {
-        team_slides_perView = 3
-        team_swiper(team_slides_perView)
-        news_slides_perView = 3
-        news_swiper(news_slides_perView)
-        // partner_slides_perView = 5
-        // partner_swiper(partner_slides_perView)
-      } else if (window_width <= 768 && window_width > 425) {
-        team_slides_perView = 2
-        team_swiper(team_slides_perView)
-        news_slides_perView = 2
-        news_swiper(news_slides_perView)
-        // partner_slides_perView = 4
-        // partner_swiper(partner_slides_perView)
-      } else if (window_width < 425) {
-        team_slides_perView = 1
-        team_swiper(team_slides_perView)
-        news_slides_perView = 1
-        news_swiper(news_slides_perView)
-        // partner_slides_perView = 3
-        // partner_swiper(partner_slides_perView)
-      }
-    });
-
-  })  
-</script>
 </body>
 </html>
