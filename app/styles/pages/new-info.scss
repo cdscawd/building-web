@@ -24,6 +24,7 @@
       border: none;
       box-shadow: none;
       .nav {
+        border-left: 3px solid #f57c05;
         li {
           a {
             color: #333;
@@ -38,11 +39,10 @@
 
 
     .pager {
-      margin: 20px 0;
-      padding-top: 20px;
       border-top: solid 1px #eee;
       display: flex;
       justify-content: space-between;
+      padding: 40px 0;
 
       li {
         a {

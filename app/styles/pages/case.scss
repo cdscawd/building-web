@@ -1,0 +1,66 @@
+
+// case default
+
+.case-page {
+  background: #fff;
+  
+  section.top-banner {
+    padding: 20px 0;
+    margin-bottom: 40px;
+    background: orange;
+    h1 {
+      color: #333333;
+      font-size: 30px;
+      font-weight: 700;
+    }
+  }
+
+  section.csae-section {
+    
+
+    .item {
+      margin-bottom: $swiper_pagination_margin;
+      .thumb {
+        position: relative;
+        overflow: hidden;
+        img {
+          display: block;
+          width: 100%;
+          transform-style: preserve-3d;
+        }
+      }
+      .text {
+        background: #f1f1f1;
+        padding: 15px;
+        h3 {
+          text-align: left;
+          color: #353535;
+          font-weight: bold;
+          font-size: 16px;
+          margin-top: 10px;
+          margin-bottom: 5px;
+          text-transform: uppercase;
+          a {
+            color: #353535;
+            &:hover {
+              color: #f57c05;
+            }
+          }
+        }
+        h4 {
+          text-align: left;
+          color: #353535;
+          font-size: 13px;
+          margin-bottom: 20px;
+        }
+        p {
+          text-align: left;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
