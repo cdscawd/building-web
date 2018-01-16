@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="styles/swiper/swiper.min.css">
 </head>
 
-<body class="news-page">
+<body class="contact-page">
   <!-- header -->
   <header class="header">
     <nav class="navbar"><!-- navbar-fixed-top -->
@@ -52,106 +52,52 @@
     </div>
   </section>
 
-  <section class="news-section">
+  <section class="contact-section">
     <div class="container">
       <div class="row">
-        <div class="col-md-9">
-          
-          <div class="post">
+        <div class="col-md-8">
+          <h1>我们能为你解决什么问题？</h1>
+          <p>服务介绍 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos numquam illum molestiae velit labore ullam ad nemo asperiores ipsa cupiditate reiciendis adipisci necessitatibus, magnam assumenda, facilis iusto sequi minus quaerat.</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima laborum eveniet aspernatur magni nemo repudiandae assumenda fugit, ut, consectetur neque excepturi sit tempora ab quod ullam similique quos quidem totam!</p>
+          <div class="heading">
+            <h3>给我们留言</h3>
+          </div>
+          <div id="contact-message"></div>
+          <form class="contact-form" method="post" action=" ">
             <div class="row">
-                <div class="col-md-4">
-                  <div class="image">
-                    <a href="/new-info.html">
-                      <img src="/images/news/news-01.jpg" alt="">
-                    </a>
-                  </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="name">您的称呼</label>
+                  <input type="text" class="form-control" name="name" id="name" required="">
                 </div>
-                <div class="col-md-8">
-                  <h2>
-                    <a href="/new-info.html">Linked post</a>
-                  </h2>
-                  <div class="clearfix">
-                    <p class="author-category">
-                      By <a href="#">admin</a>
-                      in <a href="">成都.四川</a>
-                    </p>
-                    <p class="date-comments">
-                      <a href=""><i class="fa fa-calendar-o"></i>2018-01-12</a>
-                    </p>
-                  </div>
-                  <p class="intro">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ut laborum enim soluta, earum officiis nostrum facere debitis, laboriosam similique perferendis adipisci praesentium deleniti. Quidem explicabo quibusdam odit nisi tenetur!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ut laborum enim soluta, earum officiis nostrum facere debitis, laboriosam similique perferendis adipisci praesentium deleniti. Quidem explicabo quibusdam odit nisi tenetur!
-                  </p>
-                  <p class="read-more">
-                    <a href="/new-info.html">Read More</a>
-                  </p>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="contact">联系方式</label>
+                  <input type="text" class="form-control" name="contact" id="contact" required="">
                 </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="message">留言</label>
+                  <textarea id="message" class="form-control" rows="4" name="message" required=""></textarea>
+                </div>
+              </div>
+              <div class="col-sm-12 text-center">
+                <button type="submit" class="btn btn-warning">提交信息</button>
+              </div>
             </div>
-          </div>
-          
-          <div class="post">
-            <div class="row">
-                <div class="col-md-4">
-                  <div class="image">
-                    <a href="">
-                      <img src="/images/news/news-01.jpg" alt="">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-8">
-                  <h2>
-                    <a href="">Linked post</a>
-                  </h2>
-                  <div class="clearfix">
-                    <p class="author-category">
-                      By <a href="#">admin</a>
-                      in <a href="">成都.四川</a>
-                    </p>
-                    <p class="date-comments">
-                      <a href=""><i class="fa fa-calendar-o"></i>2018-01-12</a>
-                    </p>
-                  </div>
-                  <p class="intro">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ut laborum enim soluta, earum officiis nostrum facere debitis, laboriosam similique perferendis adipisci praesentium deleniti. Quidem explicabo quibusdam odit nisi tenetur!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, ut laborum enim soluta, earum officiis nostrum facere debitis, laboriosam similique perferendis adipisci praesentium deleniti. Quidem explicabo quibusdam odit nisi tenetur!
-                  </p>
-                  <p class="read-more">
-                    <a href="">Read More</a>
-                  </p>
-                </div>
-            </div>
-          </div>
-
-          <ul class="pager">
-            <li class="previous disabled"><a href="#">← 上一页</a></li>
-            <li class="next disabled"><a href="#">下一页 →</a></li>
-          </ul>
+          </form>
         </div>
-
-        <div class="col-md-3">
-          <div class="panel">
-            <div class="panel-heading">
-              <h3 class="panel-title">热门动态</h3>
-            </div>
-            <div class="panel-body">
-              <ul class="nav">
-                <li><a href="">news-01 title</a>
-                </li>
-                <li><a href="">news-02 title</a>
-                </li>
-                <li><a href="">news-03 title</a>
-                </li>
-                <li><a href="">news-04 title</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div class="col-md-4">
+          <h3 class="text-uppercase">公司地址</h3>
+          <p>地址: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repudiandae officia consectetur adipisci molestiae, ipsam at enim. Enim optio expedita quod, pariatur exercitationem dolorem aliquid! Voluptatum itaque numquam officia? Esse?</p>
         </div>
-
       </div>
     </div>
-
+    <div class="row">
+      <div id="map-canvas"></div>
+    </div>
   </section>
 
   <!-- footer -->
@@ -230,6 +176,27 @@
 
 <script src="scripts/jquery/jquery.min.js"></script>
 <script src="scripts/twbs/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.3&key=fde561f1fe64c23918dcd30c1045916e"></script>
 <script src="scripts/comm.js"></script>
+<script type="text/javascript">
+  $(function () {
+    var map = new AMap.Map('map-canvas', {
+      resizeEnable: true,
+      zoom: 18,
+      center: [104.063344, 30.540802]
+    });
+
+    var marker = new AMap.Marker({
+      title: '四川诚建劳务有限责任公司',
+      map: map
+    });
+    marker.setLabel({
+      offset: new AMap.Pixel(20, 0),
+      content: "四川诚建劳务有限责任公司"
+    });
+    $('.amap-logo').css({opacity: 0})
+    $('.amap-copyright').css({opacity: 0})
+  });
+</script>
 </body>
 </html>
